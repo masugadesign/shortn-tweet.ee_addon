@@ -8,7 +8,7 @@ Originally Developed by Eric Barnes.
 General EE Plugin Info: http://expressionengine.com/docs/development/plugins.html
 
 {exp:shortn_tweet title="{title}" url="{url_title_path=weblog/item}" short_url="bit.ly"}
-  <li><a href="{twt:twitter_url}{twt:title} {twt:title_url} (via @masuga)">Tweet this thang</a></li>
+  &lt;li&gt;&lt;a href="{twt:twitter_url}{twt:title} {twt:title_url} (via @masuga)">Tweet this thang&lt;/a&gt;&lt;/li&gt;
 {/exp:shortn_tweet}
 
 h2. Changelog
