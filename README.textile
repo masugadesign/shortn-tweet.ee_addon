@@ -1,40 +1,26 @@
 h1. Short 'n Tweet
 
-Encode email addresses to make it harder for spammers to harvest them. This is different from EE's built-in "encode" in that it will still work with JavaScript disabled.
+Create a "Tweet This" link and optionally use bit.ly or is.gd to shorten the current URL.
 
 h2. Info
 
-Developed by Ryan Masuga, http://masugadesign.com
-
-Docs: "MD Spam Me Not":http://www.masugadesign.com/the-lab/scripts/spam-me-not/ <br />
+Originally Developed by Eric Barnes.
 General EE Plugin Info: http://expressionengine.com/docs/development/plugins.html
 
-* Original Spam-me-not PHP version by Rolf Offermanns
-* Inspired by the Spam-me-not JavaScript by Andreas Neudecker
-* Spam-me-not Javascript Homepage: http://www.zapyon.de/
+{exp:shortn_tweet title="{title}" url="{url_title_path=weblog/item}" short_url="bit.ly"}
+  <li><a href="{twt:twitter_url}{twt:title} {twt:title_url} (via @masuga)">Tweet this thang</a></li>
+{/exp:shortn_tweet}
 
 h2. Changelog
 
-*1.0.5 (Jun 25 2009)*
+*1.2 (October 2, 2009)*
 
-* Added mailto="off" parameter to return just the email address.
+* Changed name, re-released as new thing
 
-1.0.4 (Mar 7, 2009)
+1.1
 
-* Changed name (and function and class) to MD Spam Me Not (md_spam_me_not)
+* Added support for changing link title.
 
-1.0.3 (Sep 15, 2007)
+1.0
 
-* Added subject, class (thanks Gleam and jejune)
-
-1.0.2 (Nov 17, 2006)
-
-* Added title attribute (thanks, Cocoaholic)
-
-1.0.1 (Nov 17, 2006)
-
-* Fixed small bug in $show var
-
-1.0.0 (Nov 15, 2006)
-
-* Made into ExpressionEngine plugin
+* First Release
