@@ -249,13 +249,6 @@ class Shortn_tweet {
 		
 		link_title="Tweet This!"
 		- This is the link title. Could be text or image.
-
-		------------------
-		CHANGELOG:
-		------------------		
-		Version 1.2 - Changed name, re-released as new thing
-		Version 1.1 - June 9, 2009 - Added support for changing link title.
-		Version 1.0 - First Release
 		
 		<?php
 		$buffer = ob_get_contents();
