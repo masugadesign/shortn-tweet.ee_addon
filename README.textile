@@ -11,6 +11,13 @@ General EE Plugin Info: http://expressionengine.com/docs/development/plugins.htm
   &lt;li&gt;&lt;a href="{twt:twitter_url}{twt:title} {twt:title_url} (via @masuga)">Tweet this thang&lt;/a&gt;&lt;/li&gt;
 {/exp:shortn_tweet}
 
+Remember that if you are using bit.ly as your URL shortener that you will need an account. You will then have to add your username and bit.ly API key to the plugin, in the *do_shorten_url_bitly* function:
+
+<code>
+  $login = 'YOURBITLYLOGIN'; // enter your bit.ly login here
+  $apikey = 'R_01234567890abcdefghijklmnopqrstu'; // enter your key here
+</code>
+
 h2. Changelog
 
 *1.2 (October 2, 2009)*
