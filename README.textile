@@ -13,10 +13,10 @@ General EE Plugin Info: http://expressionengine.com/docs/development/plugins.htm
 
 Remember that if you are using bit.ly as your URL shortener that you will need an account. You will then have to add your username and bit.ly API key to the plugin, in the *do_shorten_url_bitly* function:
 
-<code>
+<pre>
   $login = 'YOURBITLYLOGIN'; // enter your bit.ly login here
   $apikey = 'R_01234567890abcdefghijklmnopqrstu'; // enter your key here
-</code>
+</pre>
 
 h2. Changelog
 
