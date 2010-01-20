@@ -1,4 +1,4 @@
-h1. Short 'n Tweet
+h1. Short 'n Tweet (EE 2.0 version)
 
 Create a "Tweet This" link and optionally use bit.ly or is.gd to shorten the current URL.
 
