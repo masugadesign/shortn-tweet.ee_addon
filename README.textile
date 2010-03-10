@@ -7,8 +7,8 @@ h2. Info
 Originally Developed by Eric Barnes.
 General EE Plugin Info: http://expressionengine.com/docs/development/plugins.html
 
-{exp:shortn_tweet title="{title}" url="{url_title_path=weblog/item}" short_url="bit.ly"}
-  &lt;li&gt;&lt;a href="{twt:twitter_url}{twt:title} {twt:title_url} (via @masuga)">Tweet this thang&lt;/a&gt;&lt;/li&gt;
+{exp:shortn_tweet title="{title}" url="{url_title_path=weblog/item}" hashtags="#foo #bar" short_url="bit.ly"}
+  &lt;li&gt;&lt;a href="{twt:twitter_url}{twt:title} {twt:hashtags} {twt:title_url} (via @masuga)">Tweet this thang&lt;/a&gt;&lt;/li&gt;
 {/exp:shortn_tweet}
 
 Remember that if you are using bit.ly as your URL shortener that you will need an account. You will then have to add your username and bit.ly API key to the plugin, in the *do_shorten_url_bitly* function:
@@ -20,7 +20,12 @@ Remember that if you are using bit.ly as your URL shortener that you will need a
 
 h2. Changelog
 
-*1.2 (October 2, 2009)*
+*1.3 (March 10, 2010)*
+
+* (1.6.8) Suppressed PHP notices in bad bit.ly responses
+* (1.6.8) Added optional hashtag parameter
+
+1.2 (October 2, 2009)
 
 * Changed name, re-released as new thing
 
